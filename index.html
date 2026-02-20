@@ -1,61 +1,180 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Daniel</title>
+    <title>Daniel | Product Manager</title>
+    <meta name="description" content="Daniel - Innovative and user-centric Product Manager" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-        <button id="dark-mode-toggle">🌙 Dark Mode</button>
-      </nav>
-    </header>
+    <div class="wrap">
 
-    <main>
-      <section id="about">
-        <img src="https://i.ibb.co/9v0Gyt7/daniel.jpg" alt="Daniel" />
-        <h1>Daniel, Product Manager</h1>
-        <p>
-          Innovative and user-centric Product Manager with a passion for building
-          impactful products.
-        </p>
-      </section>
+      <header class="fadeIn">
+        <div class="brand">
+          <div class="mark" aria-hidden="true"></div>
+          <div>
+            <div class="name">Daniel</div>
+            <div class="role">Product Manager</div>
+          </div>
+        </div>
+        <nav aria-label="Quick links">
+          <a class="chip" href="#about">About</a>
+          <a class="chip" href="#portfolio">Portfolio</a>
+          <a class="chip" href="#contact">Contact</a>
+          <button class="chip" id="dark-mode-toggle">☀️ Light</button>
+        </nav>
+      </header>
 
-      <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
+      <section class="hero" id="about">
+        <div class="card pad heroMain fadeIn d2">
+          <h1 class="headline">Building products,<br>driving impact.</h1>
+          <p class="sub">
+            Innovative and user-centric Product Manager with a passion for building
+            <b>impactful products</b>. I turn complex problems into
+            <b>clear, actionable solutions</b> — from discovery to delivery.
+          </p>
+          <div class="accentLine" aria-hidden="true"></div>
+          <div class="kvs" role="list">
+            <div class="kv" role="listitem">
+              <span class="dot" aria-hidden="true"></span>
+              <div>
+                <div class="k">Focus</div>
+                <div class="v">Product Strategy · UX · Growth</div>
+              </div>
+            </div>
+            <div class="kv" role="listitem">
+              <span class="dot" aria-hidden="true"></span>
+              <div>
+                <div class="k">Approach</div>
+                <div class="v">Data-driven · User-first</div>
+              </div>
+            </div>
           </div>
-          <div class="card">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
+          <div class="ctaRow">
+            <a class="btn primary" href="#portfolio">View Portfolio ↓</a>
+            <a class="btn" href="#contact">Contact Me</a>
           </div>
-          <div class="card">
-            <h3>Project 3</h3>
-            <p>Description of Project 3.</p>
+        </div>
+
+        <div class="side fadeIn d3">
+          <div class="note">
+            <h3>One-liner</h3>
+            <p>
+              Great products are built on clear thinking and honest communication —
+              I bridge the gap between users, data, and engineering teams.
+            </p>
+          </div>
+          <div class="note">
+            <h3>What I do</h3>
+            <p>
+              From roadmap planning to stakeholder alignment, I turn ambiguity
+              into structured plans that teams can confidently execute.
+            </p>
           </div>
         </div>
       </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: daniel.pm@example.com</p>
-        <p>LinkedIn: linkedin.com/in/daniel-pm</p>
+      <div class="sectionHead" id="portfolio">
+        <div>
+          <h2>Portfolio</h2>
+          <div class="hint">Selected projects — strategy, execution, and results.</div>
+        </div>
+      </div>
+
+      <section class="posts" aria-label="Portfolio projects">
+        <article class="post fadeIn">
+          <div class="thumb thumb1"></div>
+          <div class="postBody">
+            <div class="metaRow">
+              <div class="meta">2024</div>
+              <div class="tags">
+                <span class="pill">Strategy</span>
+                <span class="pill">Growth</span>
+              </div>
+            </div>
+            <h3 class="postTitle">Project 1</h3>
+            <p class="excerpt">
+              Led end-to-end product development, defining the vision, roadmap, and
+              success metrics. Collaborated cross-functionally to ship a feature that
+              improved user retention by 30%.
+            </p>
+          </div>
+          <div class="postFoot">
+            <div class="readTime">Product Strategy</div>
+            <a class="readBtn" href="#">View ↗</a>
+          </div>
+        </article>
+
+        <article class="post fadeIn d2">
+          <div class="thumb thumb2"></div>
+          <div class="postBody">
+            <div class="metaRow">
+              <div class="meta">2023</div>
+              <div class="tags">
+                <span class="pill">UX</span>
+                <span class="pill">Research</span>
+              </div>
+            </div>
+            <h3 class="postTitle">Project 2</h3>
+            <p class="excerpt">
+              Redesigned the core onboarding flow based on user research findings,
+              reducing drop-off rate by 40% and increasing activation by 25%
+              within the first quarter.
+            </p>
+          </div>
+          <div class="postFoot">
+            <div class="readTime">UX Research</div>
+            <a class="readBtn" href="#">View ↗</a>
+          </div>
+        </article>
+
+        <article class="post fadeIn d3">
+          <div class="thumb thumb3"></div>
+          <div class="postBody">
+            <div class="metaRow">
+              <div class="meta">2023</div>
+              <div class="tags">
+                <span class="pill">Data</span>
+                <span class="pill">Analytics</span>
+              </div>
+            </div>
+            <h3 class="postTitle">Project 3</h3>
+            <p class="excerpt">
+              Built a real-time analytics dashboard that empowered the team to
+              make faster, data-backed decisions. Reduced time-to-insight from
+              days to minutes.
+            </p>
+          </div>
+          <div class="postFoot">
+            <div class="readTime">Data & Analytics</div>
+            <a class="readBtn" href="#">View ↗</a>
+          </div>
+        </article>
       </section>
-    </main>
 
-    <footer>
-      <p>&copy; 2023 by Daniel</p>
-    </footer>
+      <section class="card pad contact" id="contact">
+        <h2>Contact</h2>
+        <p class="sub" style="margin-bottom:14px;">
+          Open to collaboration, speaking, and product conversations.
+          Feel free to reach out through any channel below.
+        </p>
+        <div class="ctaRow">
+          <a class="btn" href="mailto:daniel.pm@example.com">daniel.pm@example.com</a>
+          <a class="btn" href="https://linkedin.com/in/daniel-pm" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a class="btn" href="#about">Back to top ↑</a>
+        </div>
+      </section>
 
+      <footer>
+        <div>© <span id="y"></span> Daniel. All rights reserved.</div>
+        <div>Made with HTML · CSS · JS</div>
+      </footer>
+
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

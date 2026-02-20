@@ -1,15 +1,18 @@
 console.log("The website is running! You should see this message in the developer console of the preview window.");
 
+document.getElementById("y").textContent = new Date().getFullYear();
+
 const toggle = document.getElementById('dark-mode-toggle');
 
-if (localStorage.getItem('dark-mode') === 'enabled') {
-  document.body.classList.add('dark');
-  toggle.textContent = '☀️ Light Mode';
+// Default is dark. 'light' class = light mode
+if (localStorage.getItem('theme') === 'light') {
+  document.body.classList.add('light');
+  toggle.textContent = '🌙 Dark';
 }
 
 toggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-  const isDark = document.body.classList.contains('dark');
-  toggle.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
-  localStorage.setItem('dark-mode', isDark ? 'enabled' : 'disabled');
+  document.body.classList.toggle('light');
+  const isLight = document.body.classList.contains('light');
+  toggle.textContent = isLight ? '🌙 Dark' : '☀️ Light';
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
 });
