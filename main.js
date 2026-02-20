@@ -1,10 +1,9 @@
-console.log("The website is running! You should see this message in the developer console of the preview window.");
+console.log("김광섭 포트폴리오 사이트가 실행 중입니다.");
 
 document.getElementById("y").textContent = new Date().getFullYear();
 
 const toggle = document.getElementById('dark-mode-toggle');
 
-// Default is dark. 'light' class = light mode
 if (localStorage.getItem('theme') === 'light') {
   document.body.classList.add('light');
   toggle.textContent = '🌙 Dark';
