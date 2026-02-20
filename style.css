@@ -1,1 +1,54 @@
-/* Add styles here */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+#about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#portfolio .cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+#portfolio .card {
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 30%;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

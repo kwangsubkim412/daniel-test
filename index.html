@@ -1,14 +1,60 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
-</head>
-<body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Daniel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <img src="https://i.ibb.co/9v0Gyt7/daniel.jpg" alt="Daniel" />
+        <h1>Daniel, Product Manager</h1>
+        <p>
+          Innovative and user-centric Product Manager with a passion for building
+          impactful products.
+        </p>
+      </section>
+
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+          </div>
+          <div class="card">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+          </div>
+          <div class="card">
+            <h3>Project 3</h3>
+            <p>Description of Project 3.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: daniel.pm@example.com</p>
+        <p>LinkedIn: linkedin.com/in/daniel-pm</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 by Daniel</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>

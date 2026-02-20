@@ -1,1 +1,1 @@
-// Add JS here
+console.log("The website is running! You should see this message in the developer console of the preview window.");
