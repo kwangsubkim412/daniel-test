@@ -195,8 +195,7 @@ nav { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
 .profileRole { color: var(--muted); font-size: 13px; margin-top: 3px; }
 
 .headline {
-  font-family: "Newsreader", serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: clamp(26px, 4vw, 44px);
   line-height: 1.12;
   letter-spacing: -.03em;
