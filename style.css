@@ -185,6 +185,36 @@ nav {
 
 .heroMain { min-height: 260px; }
 
+.profileRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.profileImg {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,.20);
+  box-shadow: 0 8px 30px rgba(0,0,0,.40);
+}
+
+.profileName {
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: -.02em;
+}
+
+.profileRole {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 3px;
+}
+
 .heroMain:before {
   content: "";
   position: absolute;
