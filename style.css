@@ -330,8 +330,8 @@ nav { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
 }
 
 .thumb1 { background: var(--navy); }
-.thumb2 { background: var(--teal); }
-.thumb3 { background: var(--terra); }
+.thumb2 { background: var(--navy); }
+.thumb3 { background: var(--navy); }
 
 /* Geometric circle decoration */
 .thumb:after {
