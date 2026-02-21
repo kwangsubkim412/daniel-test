@@ -144,15 +144,16 @@ nav { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
 }
 
 .profileImg {
-  width: 56px; height: 56px;
+  width: 80px; height: 80px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--accent);
   flex: 0 0 auto;
+  box-shadow: 0 0 0 4px rgba(212,146,14,.15);
 }
 
-.profileName { font-weight: 900; font-size: 16px; letter-spacing: -.02em; }
-.profileRole { color: var(--muted); font-size: 13px; margin-top: 3px; }
+.profileName { font-weight: 900; font-size: 17px; letter-spacing: -.03em; }
+.profileRole { color: var(--muted); font-size: 13px; margin-top: 4px; }
 
 .headline {
   font-weight: 800;
@@ -320,27 +321,38 @@ nav { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
 
 .post:hover { transform: translateY(-3px); border-color: rgba(240,234,216,.22); }
 
-/* Career thumbs — solid flat colors */
+/* Career thumbs */
 .thumb {
-  height: 110px;
+  height: 120px;
   display: flex;
   align-items: flex-end;
   padding: 12px;
   position: relative;
+  overflow: hidden;
 }
 
-.thumb1 { background: var(--navy); }
-.thumb2 { background: var(--navy); }
-.thumb3 { background: var(--navy); }
+.thumb1,
+.thumb2,
+.thumb3 { background: var(--card2); }
+
+/* Accent top stripe */
+.thumb:before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--accent);
+  opacity: .85;
+}
 
 /* Geometric circle decoration */
 .thumb:after {
   content: "";
   position: absolute;
-  top: -20px; right: -20px;
-  width: 80px; height: 80px;
+  top: -24px; right: -24px;
+  width: 90px; height: 90px;
   border-radius: 50%;
-  background: rgba(255,255,255,.08);
+  background: rgba(212,146,14,.10);
   pointer-events: none;
 }
 
@@ -349,13 +361,13 @@ nav { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background: rgba(0,0,0,.25);
+  background: rgba(0,0,0,.18);
   border-radius: 3px;
   padding: 5px 9px;
 }
 
-.thumbCompany { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.95); }
-.thumbPeriod  { font-size: 10px; color: rgba(255,255,255,.75); }
+.thumbCompany { font-size: 11px; font-weight: 700; color: var(--text); }
+.thumbPeriod  { font-size: 10px; color: var(--muted); }
 
 /* Blog thumbs */
 .thumbBlog { height: 150px; background: var(--card2); padding: 0; }
